@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Form</title>
+</head>
+<body>
+    <form>
+        <label>Name: </label>
+            <input id="name" type="text" name="name" placeholder="Enter your name"><br><br>
+
+
+        <fieldset> 
+            <p>FONT CUSTOMIZATION </p>
+
+        <p> Font Color:
+        <input id="textColor" type="color" name="textcolor"> 
+        </p>
+ 
+        <p>
+        <label for="font"> Text Size: </label>
+        <input
+            id="size" 
+            type="range" 
+            name="size" 
+            min="12" 
+            max="48" 
+            value="12" 
+            onchange="changeSize()" >
+        </p>
+        <p> Select background color:
+            <input id="backgroundColor" type="color" name="backgroundColor">
+            </p>
+
+        <p>
+        <input type="radio" class="fontType" name="fontfamily" value="Times New Roman" onclick="changeFont(this)">
+        <label for="Times New Roman">Times New Roman</label><br>
+        <input type="radio" class="fontType" name="fontfamily" value="Courier" onclick="changeFont(this)">
+        <label for="Courier New">Courier New</label><br>
+        <input type="radio" class="fontType" name="fontfamily" value="Brush Script MT" onclick="changeFont(this)">
+        <label for="Brush Script MT">Brush Script MT</label>
+        </p>
+        </fieldset>
+        
+            <p> To start over click the button below</p>
+            <button id="resetbtn" type="button" onclick="reset()">Reset</button>
+    </form>
+    <button class="btn"><a href="../index.html">Back to Home</a></button>
+    
+    <script src="form.js"></script> 
+</body>
+</html>
