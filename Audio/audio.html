@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sound Machine</title>
+</head>
+
+<body>
+    <h1>Sound Machine</h1>
+    <audio id="birds">
+        <source src="./audio/birds.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="doorbell">
+        <source src="./audio/doorbell.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="helicopter">
+        <source src="./audio/helicopter.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="motorcycle">
+        <source src="./audio/motorcycle.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="rain">
+        <source src="./audio/rain.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="container">
+        <button type="button" onclick="playBirds()">
+            <img class="images" src="./images/birds.png" width="300px" alt="Birds">
+        </button>
+        <button type="button" onclick="playDoorbell()">
+            <img class="images" src="./images/doorbell.png" width="350px" alt="Doorbell">
+        </button>
+        <button type="button" onclick="playHelicopter()">
+            <img class="images" src="./images/helicopter.png" width="400px" alt="Helicopter">
+        </button>
+
+        <button type="button" onclick="playMotorcycle()">
+            <img class="images" src="./images/motorcylce.png" width="400px" alt="Motorcycle">
+        </button>
+
+        <button type="button" onclick="playRain()">
+            <img class="images" src="./images/rain.png" width="400px" alt="Rain">
+        </button>
+    </div>
+    <a href="../index.html">Return home</a>
+
+    <script src="./audio.js"></script>
+</body>
+
+</html>
