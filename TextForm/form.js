@@ -1,12 +1,3 @@
-function reset() {
-  const resetname = document.getElementById('name');
-  resetname.value = null;
-  resetname.style.backgroundColor = null;
-  document.getElementById('radio').checked = false;
-  document.getElementById('backgroundColor').value = "white";
-  document.getElementById('size').value = '12';
-}
-
 // change Text Color
 var colorPicker = document.getElementById("textColor");
 colorPicker.addEventListener("input", updateTextColor, false);
@@ -35,4 +26,14 @@ function changeFont(obj) {
   const name = document.getElementById('name');
   name.style.fontFamily = obj.value;
 
+}
+function reset() {
+  document.getElementById('textColor').value=null;
+  document.getElementById('input').value=null;
+  resetname.style.backgroundColor = null;
+  document.getElementById("nameField").value= null;
+  document.getElementById('radio').checked = false;
+  document.getElementById('backgroundColor').value = null;
+  document.getElementById('textColor').value = null;
+  document.getElementById('size').value = null;
 }
